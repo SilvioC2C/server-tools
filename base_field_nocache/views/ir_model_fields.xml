@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="view_model_fields_form_inherit" model="ir.ui.view">
+        <field name="model">ir.model.fields</field>
+        <field name="inherit_id" ref="base.view_model_fields_form" />
+        <field name="arch" type="xml">
+            <field name="copied" position="after">
+                <field name="nocache" readonly="state != 'manual'" />
+            </field>
+        </field>
+    </record>
+</odoo>
